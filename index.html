@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LearnBase | The Ultimate Educational Resource Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    .time-display {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #1abc9c;
+    }
+
+    #search-bar {
+      padding: 10px;
+      margin-top: 20px;
+      width: 80%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LearnBase</h1>
+    <p>The Ultimate Educational Resource Hub</p>
+  </header>
+
+  <nav>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <div class="dropdown">
+        <a href="#">More</a>
+        <div class="dropdown-content">
+          <a href="#">Library Links</a>
+          <a href="#">National Libraries</a>
+          <a href="#">Research Databases</a>
+          <a href="#">News & Articles</a>
+        </div>
+      </div>
+    </div>
+    <input type="text" id="search-bar" placeholder="Search...">
+  </nav>
+
+  <section id="courses">
+    <h2>Explore Our Courses</h2>
+    <p>Tap below to discover courses from various domains:</p>
+    <div class="dropdown">
+      <button>Course Types</button>
+      <div class="dropdown-content">
+    <a href="#">Accounting</a>
+    <a href="#">Actuarial Science</a>
+    <a href="#">Advertising</a>
+    <a href="#">Agricultural Engineering</a>
+    <a href="#">Agricultural Science</a>
+    <a href="#">Anthropology</a>
+    <a href="#">Archaeology</a>
+    <a href="#">Architecture</a>
+    <a href="#">Art & Design</a>
+    <a href="#">Biochemistry</a>
+    <a href="#">Biological Sciences</a>
+    <a href="#">Biomedical Engineering</a>
+    <a href="#">Biomedical Science</a>
+    <a href="#">Business Administration</a>
+    <a href="#">Business & Finance</a>
+    <a href="#">Chemical Engineering</a>
+    <a href="#">Chemistry</a>
+    <a href="#">Civil Engineering</a>
+    <a href="#">Classics</a>
+    <a href="#">Computer Engineering</a>
+    <a href="#">Computer Science</a>
+    <a href="#">Criminal Justice</a>
+    <a href="#">Data Science</a>
+    <a href="#">Dentistry</a>
+    <a href="#">Economics</a>
+    <a href="#">Education</a>
+    <a href="#">Electrical Engineering</a>
+    <a href="#">English Literature</a>
+    <a href="#">Environmental Engineering</a>
+    <a href="#">Environmental Science</a>
+    <a href="#">Finance</a>
+    <a href="#">Fine Arts</a>
+    <a href="#">Forensic Science</a>
+    <a href="#">Geography</a>
+    <a href="#">Geology</a>
+    <a href="#">Graphic Design</a>
+    <a href="#">Health Administration</a>
+    <a href="#">Healthcare Management</a>
+    <a href="#">History</a>
+    <a href="#">Human Resource Management</a>
+    <a href="#">Humanities</a>
+    <a href="#">Industrial Engineering</a>
+    <a href="#">Information Technology</a>
+    <a href="#">International Relations</a>
+    <a href="#">Law & Political Science</a>
+    <a href="#">Linguistics</a>
+    <a href="#">Management</a>
+    <a href="#">Marketing</a>
+    <a href="#">Mathematics</a>
+    <a href="#">Mechanical Engineering</a>
+    <a href="#">Medicine</a>
+    <a href="#">Microbiology</a>
+    <a href="#">Music</a>
+    <a href="#">Nursing</a>
+    <a href="#">Philosophy</a>
+    <a href="#">Physics</a>
+    <a href="#">Political Science</a>
+    <a href="#">Psychology</a>
+    <a href="#">Psychology & Social Sciences</a>
+    <a href="#">Public Administration</a>
+    <a href="#">Public Health</a>
+    <a href="#">Robotics</a>
+    <a href="#">Sociology</a>
+    <a href="#">Software Engineering</a>
+    <a href="#">Sports Management</a>
+    <a href="#">Supply Chain Management</a>
+    <a href="#">Theology</a>
+    <a href="#">Tourism & Hospitality</a>
+    <a href="#">Veterinary Science</a>
+    <a href="#">Visual Arts</a>
+    <a href="#">Web Development</a>
+    <a href="#">Zoology</a>
+</div>
+
+    </div>
+  </section>
+
+  <section id="libraries">
+    <h2>National Libraries</h2>
+    <ul>
+        <li><a href="https://www.onb.ac.at/">Austrian National Library (Austria)</a></li>
+        <li><a href="https://www.kbr.be/en/">Royal Library of Belgium (Belgium)</a></li>
+        <li><a href="https://www.bnf.fr/en">Bibliothèque nationale de France (France)</a></li>
+        <li><a href="https://www.gov.br/bn/en">Fundação Biblioteca Nacional (Brazil)</a></li>
+        <li><a href="https://www.bnm.iib.unam.mx/">Biblioteca Nacional de México (Mexico)</a></li>
+        <li><a href="https://www.nlc.cn/">National Library of China (China)</a></li>
+        <li><a href="https://www.kansalliskirjasto.fi/en">National Library of Finland (Finland)</a></li>
+        <li><a href="https://www.nli.ie/en/">National Library of Ireland (Ireland)</a></li>
+        <li><a href="http://www.nationallibrary.gov.in/">National Library of India (India)</a></li>
+        <li><a href="https://www.landsbokasafn.is/english/">National and University Library of Iceland (Iceland)</a></li>
+        <li><a href="https://www.bl.uk/">British Library (United Kingdom)</a></li>
+        <li><a href="https://www.library-archives.canada.ca/">Library and Archives Canada (Canada)</a></li>
+        <li><a href="https://www.nli.org.il/en">National Library of Israel (Israel)</a></li>
+        <li><a href="https://www.ndl.go.jp/en/">National Diet Library (Japan)</a></li>
+        <li><a href="https://www.nlb.gov.sg/">National Library of Singapore (Singapore)</a></li>
+        <li><a href="https://www.nlsa.ac.za/">National Library of South Africa (South Africa)</a></li>
+        <li><a href="https://www.nbuv.gov.ua/">Vernadsky National Library of Ukraine (Ukraine)</a></li>
+        <li><a href="https://www.nb.admin.ch/snl/en/home.html">Swiss National Library (Switzerland)</a></li>
+        <li><a href="https://www.sozialarchiv.ch/en/">Swiss Social Archives (Switzerland)</a></li>
+        <li><a href="https://www.kb.nl/en">National Library of the Netherlands (Netherlands)</a></li>
+        <li><a href="https://www.lnb.lt/en">Martynas Mažvydas National Library of Lithuania (Lithuania)</a></li>
+        <li><a href="https://www.nlib.ee/en">National Library of Estonia (Estonia)</a></li>
+        <li><a href="https://www.museum.nl/en/national-museum-of-world-cultures">National Library of World Cultures (Netherlands)</a></li>
+        <li><a href="https://www.nbno.no/">National Library of Norway (Norway)</a></li>
+        <li><a href="https://www.mkutup.gov.tr/">National Library of Turkey (Turkey)</a></li>
+        <li><a href="https://www.bnl.lu/">National Library of Luxembourg (Luxembourg)</a></li>
+        <li><a href="https://www.nv.com/">National Library of Vietnam (Vietnam)</a></li>
+        <li><a href="https://www.nl.go.kr/english/">National Library of Korea (South Korea)</a></li>
+        <li><a href="https://www.library.gov.au/">National Library of Australia (Australia)</a></li>
+        <li><a href="https://www.nlsa.ac.za/">National Library of South Africa (South Africa)</a></li>
+        <li><a href="https://www.npk.cz/">National Library of the Czech Republic (Czech Republic)</a></li>
+        <li><a href="https://www.nli.org.il/en">National Library of Israel (Israel)</a></li>
+        <li><a href="https://www.nlsa.ac.za/">National Library of South Africa (South Africa)</a></li>
+        <li><a href="https://www.lnb.lt/en">National Library of Lithuania (Lithuania)</a></li>
+        <li><a href="https://www.nlp.gov.ph/">National Library of the Philippines (Philippines)</a></li>
+        <li><a href="https://www.nbno.no/">National Library of Norway (Norway)</a></li>
+        <li><a href="https://www.nkp.cz/">National Library of the Czech Republic (Czech Republic)</a></li>
+        <li><a href="https://www.gov.br/bn/en">Fundação Biblioteca Nacional (Brazil)</a></li>
+        <li><a href="https://www.nlp.gov.ph/">National Library of the Philippines (Philippines)</a></li>
+        <li><a href="https://www.lnb.lt/en">National Library of Lithuania (Lithuania)</a></li>
+        <li><a href="https://www.natlib.org.nz/">National Library of New Zealand (New Zealand)</a></li>
+        <li><a href="https://www.senate.gov.ph/library/">Philippine Senate Library (Philippines)</a></li>
+        <li><a href="https://www.bnl.gov.br/">Biblioteca Nacional do Brasil (Brazil)</a></li>
+        <li><a href="https://www.malta.com/en/">National Library of Malta (Malta)</a></li>
+        <li><a href="https://www.jstor.org/stable/40445158">National Library of Bhutan (Bhutan)</a></li>
+        <li><a href="https://www.museum.nl/en/national-museum-of-world-cultures">National Library of World Cultures (Netherlands)</a></li>
+        <li><a href="https://www.elib.gov.ph/">e-Library (Philippines)</a></li>
+        <li><a href="https://www.gov.au/library">Australian National Library (Australia)</a></li>
+        <li><a href="https://www.nepal.gov.au/">Nepal National Library (Nepal)</a></li>
+        <li><a href="https://www.nationalarchives.gov.uk/">National Archives (UK)</a></li>
+        <li><a href="https://www.archive.org/">Internet Archive (USA)</a></li>
+        <li><a href="https://www.virginia.edu/library/">University of Virginia Libraries (USA)</a></li>
+        <li><a href="https://www.princeton.edu/library/">Princeton University Library (USA)</a></li>
+        <li><a href="https://www.stanford.edu/library/">Stanford University Libraries (USA)</a></li>
+        <li><a href="https://www.gutenberg.org/wiki/Main_Page">Project Gutenberg (Global)</a></li>
+        <li><a href="https://www.library.wisc.edu/">University of Wisconsin Libraries (USA)</a></li>
+        <li><a href="https://www.yale.edu/library">Yale University Libraries (USA)</a></li>
+    </ul>
+</section>
+
+
+
+  <section id="news">
+    <h2>News & Updates</h2>
+    <p>Stay updated with the latest from major informational sites:</p>
+    <ul>
+        <li><a href="https://www.aljazeera.com/">Al Jazeera (Qatar)</a></li>
+        <li><a href="https://www.apnews.com/">Associated Press (USA)</a></li>
+        <li><a href="https://www.bbc.com/">BBC News (United Kingdom)</a></li>
+        <li><a href="https://www.bloomberg.com/">Bloomberg (USA)</a></li>
+        <li><a href="https://www.cbc.ca/">CBC News (Canada)</a></li>
+        <li><a href="https://www.cnn.com/">CNN (USA)</a></li>
+        <li><a href="https://www.dw.com/en/">Deutsche Welle (Germany)</a></li>
+        <li><a href="https://www.euronews.com/">Euronews (Europe)</a></li>
+        <li><a href="https://www.ft.com/">Financial Times (United Kingdom)</a></li>
+        <li><a href="https://www.france24.com/en/">France 24 (France)</a></li>
+        <li><a href="https://www.theguardian.com/">The Guardian (United Kingdom)</a></li>
+        <li><a href="https://www.hindustantimes.com/">Hindustan Times (India)</a></li>
+        <li><a href="https://www.irishtimes.com/">The Irish Times (Ireland)</a></li>
+        <li><a href="https://www.latimes.com/">Los Angeles Times (USA)</a></li>
+        <li><a href="https://www.npr.org/">NPR News (USA)</a></li>
+        <li><a href="https://www.nytimes.com/">New York Times (USA)</a></li>
+        <li><a href="https://www.reuters.com/">Reuters (Global)</a></li>
+        <li><a href="https://www.smh.com.au/">The Sydney Morning Herald (Australia)</a></li>
+        <li><a href="https://www.theage.com.au/">The Age (Australia)</a></li>
+        <li><a href="https://www.thehindu.com/">The Hindu (India)</a></li>
+        <li><a href="https://www.theverge.com/">The Verge (USA)</a></li>
+        <li><a href="https://www.time.com/">TIME (USA)</a></li>
+        <li><a href="https://www.wsj.com/">Wall Street Journal (USA)</a></li>
+        <li><a href="https://www.washingtonpost.com/">The Washington Post (USA)</a></li>
+        <li><a href="https://www.al-monitor.com/">Al-Monitor (Middle East)</a></li>
+        <li><a href="https://www.arxiv.org/">ArXiv - Research Papers (Global)</a></li>
+        <li><a href="https://www.biorxiv.org/">bioRxiv - Biology Preprints (Global)</a></li>
+        <li><a href="https://www.chinadaily.com.cn/">China Daily (China)</a></li>
+        <li><a href="https://www.dailystar.co.uk/">Daily Star (United Kingdom)</a></li>
+        <li><a href="https://www.dw.com/en/">Die Welt (Germany)</a></li>
+        <li><a href="https://www.elpais.com/">El País (Spain)</a></li>
+        <li><a href="https://www.english.alarabiya.net/">Al Arabiya (Middle East)</a></li>
+        <li><a href="https://www.ft.com/">Financial Times (United Kingdom)</a></li>
+        <li><a href="https://www.haaretz.com/">Haaretz (Israel)</a></li>
+        <li><a href="https://www.japantimes.co.jp/">The Japan Times (Japan)</a></li>
+        <li><a href="https://www.lemonde.fr/en/">Le Monde (France)</a></li>
+        <li><a href="https://www.motherjones.com/">Mother Jones (USA)</a></li>
+        <li><a href="https://www.npr.org/">National Public Radio (USA)</a></li>
+        <li><a href="https://www.nytimes.com/">New York Times (USA)</a></li>
+        <li><a href="https://www.reuters.com/">Reuters (Global)</a></li>
+        <li><a href="https://www.sandiegouniontribune.com/">San Diego Union-Tribune (USA)</a></li>
+        <li><a href="https://www.spectator.co.uk/">The Spectator (United Kingdom)</a></li>
+        <li><a href="https://www.spiegel.de/international/">Der Spiegel (Germany)</a></li>
+        <li><a href="https://www.theloop.au.com/">The Loop (Australia)</a></li>
+        <li><a href="https://www.theguardian.com/us">The Guardian (USA)</a>
+        <li><a href="https://www.thehindu.com/">The Hindu (India)</a></li>
+        <li><a href="https://www.vanityfair.com/">Vanity Fair (USA)</a></li>
+        <li><a href="https://www.wsj.com/">Wall Street Journal (USA)</a></li>
+        <li><a href="https://www.washingtonpost.com/">The Washington Post (USA)</a></li>
+        <li><a href="https://www.reuters.com/">Reuters (Global)</a></li>
+        <li><a href="https://www.smh.com.au/">Sydney Morning Herald (Australia)</a></li>
+        <li><a href="https://www.npr.org/">National Public Radio (USA)</a></li>
+        <li><a href="https://www.nytimes.com/">New York Times (USA)</a></li>
+        <li><a href="https://www.arxiv.org/">ArXiv - Research Papers (Global)</a></li>
+        <li><a href="https://www.biorxiv.org/">bioRxiv - Biology Preprints (Global)</a></li>
+        <li><a href="https://www.thetimes.co.uk/">The Times (United Kingdom)</a></li>
+        <li><a href="https://www.nzz.ch/en">Neue Zürcher Zeitung (Switzerland)</a></li>
+        <li><a href="https://www.sandiegouniontribune.com/">San Diego Union-Tribune (USA)</a></li>
+        <li><a href="https://www.spectator.co.uk/">The Spectator (United Kingdom)</a></li>
+        <li><a href="https://www.japantimes.co.jp/">The Japan Times (Japan)</a></li>
+        <li><a href="https://www.theloop.au.com/">The Loop (Australia)</a></li>
+        <li><a href="https://www.bbc.co.uk/newsround">BBC Newsround (United Kingdom) - For younger audiences</a>
+        <li><a href="https://www.abc.net.au/news/">ABC News (Australia)</a></li>
+        <li><a href="https://www.nationalpost.com/">National Post (Canada)</a></li>
+        <li><a href="https://www.lemonde.fr/en/">Le Monde (France)</a></li>
+        <li><a href="https://www.elpais.com/">El País (Spain)</a></li>
+        <li><a href="https://www.dailystar.co.uk/">Daily Star (UK)</a></li>
+        <li><a href="https://www.bbc.com/news/world">BBC World News (United Kingdom)</a></li>
+        <li><a href="https://www.abc.net.au/">Australian Broadcasting Corporation (Australia)</a></li>
+        <li><a href="https://www.ft.com/">Financial Times (United Kingdom)</a></li>
+        <li><a href="https://www.welt.de/en/">Die Welt (Germany)</a></li>
+        <li><a href="https://www.dw.com/en/">Deutsche Welle (Germany)</a></li>
+        <li><a href="https://www.france24.com/en/">France 24 (France)</a></li>
+        <li><a href="https://www.vanityfair.com/">Vanity Fair (USA)</a></li>
+        <li><a href="https://www.economist.com/">The Economist (UK)</a></li>
+        <li><a href="https://www.npr.org/">NPR News (USA)</a>
+        <li><a href="https://www.haaretz.com/">Haaretz (Israel)</a></li>
+        <li><a href="https://www.bbc.com/">BBC News (United Kingdom)</a></li>
+        <li><a href="https://www.rferl.org/">Radio Free Europe (USA/Global)</a></li>
+    </ul>
+</section>
+
+
+
+  <footer>
+    <div class="time-display" id="time-display"></div>
+    <p>&copy; 2025 LearnBase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const options = {
+        timeZone: 'Asia/Kolkata',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true,
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      };
+      document.getElementById("time-display").innerText = now.toLocaleString('en-IN', options);
+    }
+
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+
+</html>
